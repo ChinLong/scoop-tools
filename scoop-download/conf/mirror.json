@@ -1,0 +1,76 @@
+{
+  "apache": {
+    "origin_host": "https://www.apache.org/dist/",
+    "mirror_host": "https://mirrors.aliyun.com/apache/",
+    "support_apps": [
+      "maven",
+      "ant",
+      "groovy",
+      "jmeter",
+      "kafka",
+      "spark",
+      "tomcat",
+      "zookeeper"
+    ]
+  },
+  "python": {
+    "origin_host": "https://www.python.org/ftp/python/",
+    "mirror_host": "https://npm.taobao.org/mirrors/python/",
+    "support_apps": [
+      "python"
+    ]
+  },
+  "node": {
+    "origin_host": "https://nodejs.org/dist/",
+    "mirror_host": "https://npm.taobao.org/mirrors/node/",
+    "support_apps": [
+      "nodejs",
+      "nodejs-lts"
+    ]
+  },
+  "git": {
+    "origin_host": "https://github.com/git-for-windows/git/releases/",
+    "mirror_host": "https://npm.taobao.org/mirrors/git-for-windows/",
+    "support_apps": [
+      "git",
+      "git-with-openssh"
+    ]
+  },
+  "chromedriver": {
+    "origin_host": "http://chromedriver.storage.googleapis.com/",
+    "mirror_host": "https://npm.taobao.org/mirrors/chromedriver/",
+    "support_apps": [
+      "chromedriver"
+    ]
+  },
+  "selenium": {
+    "origin_host": "http://selenium-release.storage.googleapis.com/",
+    "mirror_host": "https://npm.taobao.org/mirrors/selenium/",
+    "support_apps": [
+      "selenium"
+    ]
+  },
+  "elk": {
+    "origin_host": "https://artifacts.elastic.co/downloads/{{app_name}}/",
+    "mirror_host": "https://mirrors.huaweicloud.com/{{app_name}}/{{version}}/",
+    "support_apps": [
+      "elasticsearch",
+      "logstash",
+      "kibana"
+    ]
+  },
+  "anaconda3": {
+    "origin_host": "https://repo.continuum.io/archive/",
+    "mirror_host": "https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/",
+    "support_apps": [
+      "anaconda3"
+    ]
+  },
+  "mariadb": {
+    "origin_host": "https://downloads.mariadb.com/MariaDB/",
+    "mirror_host": "http://ftp.utexas.edu/mariadb/",
+    "support_apps": [
+      "mariadb"
+    ]
+  }
+}
