@@ -66,6 +66,15 @@
       "anaconda3"
     ]
   },
+  "mysql": {
+    "origin_host": "https://dev.mysql.com/get/Downloads/",
+    "mirror_host": "https://mirrors.tuna.tsinghua.edu.cn/mysql/downloads/",
+    "support_apps": [
+      "mysql",
+      "mysql57",
+      "mysql56"
+    ]
+  },
   "mariadb": {
     "origin_host": "https://downloads.mariadb.com/MariaDB/",
     "mirror_host": "http://ftp.utexas.edu/mariadb/",
