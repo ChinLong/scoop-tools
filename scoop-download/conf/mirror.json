@@ -29,7 +29,7 @@
     ]
   },
   "git": {
-    "origin_host": "https://github.com/git-for-windows/git/releases/",
+    "origin_host": "https://github.com/git-for-windows/git/releases/download/",
     "mirror_host": "https://npm.taobao.org/mirrors/git-for-windows/",
     "support_apps": [
       "git",

@@ -7,6 +7,7 @@ import platform
 import sys
 import urllib.request
 
+
 # run `pyinstaller scoop-download.py`
 
 def download_file(url, file_name):
@@ -145,10 +146,12 @@ class MirrorInfo:
 
     @staticmethod
     def get_mirror_info():
-        scoop_download_home = os.environ.get('SCOOP_DOWNLOAD_HOME')
-        if scoop_download_home is None:
-            scoop_download_home = os.path.dirname(__file__)
-        json_file = os.path.join(scoop_download_home, 'conf/mirror.json')
+        json_file = os.path.join(os.path.dirname(__file__), 'conf/mirror.json')
+        if not os.path.exists(json_file):
+            json_file = os.path.join(os.environ.get('SCOOP_DOWNLOAD_HOME'), 'conf/mirror.json')
+            if not os.path.exists(json_file):
+                raise BaseException("can not find mirror.json in SCOOP_DOWNLOAD_HOME.")
+
         try:
             with open(json_file, mode='r', encoding='utf-8') as file:
                 info = dict()
